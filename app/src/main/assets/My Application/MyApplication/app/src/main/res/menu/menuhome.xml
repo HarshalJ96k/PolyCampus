@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        app:showAsAction="never"
+        android:title="menu">
+        <menu>
+            <item
+                android:id="@+id/menuHomeMyProfile"
+                android:title="My Profile"
+                app:showAsAction="always"/>
+<!--                android:icon="@drawable/icon_my_profile"/>-->
+            <item
+                android:id="@+id/menuHomeeVoting"
+                android:title="eVoting"
+                app:showAsAction="never"
+                android:icon="@drawable/icon_evoting"/>
+            <item
+                android:id="@+id/menuHomeContactUs"
+                android:title="Contact Us"
+                app:showAsAction="never"
+                android:icon="@drawable/icon_mobileno"/>
+            <item
+                android:id="@+id/menuHomeAboutUs"
+                android:title="About Us"
+                app:showAsAction="never"
+                android:icon="@drawable/icon_aboutus"/>
+            <item
+                android:id="@+id/menuHomeLogOut"
+                android:title="Log Out"
+                app:showAsAction="always"
+                android:icon="@drawable/icon_logout"/>
+        </menu>
+    </item>
+</menu>
+

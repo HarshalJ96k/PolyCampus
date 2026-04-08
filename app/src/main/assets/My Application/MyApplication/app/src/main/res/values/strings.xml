@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="Spinner_items">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="Spinner_items2">
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Information Engineering</item>
+    </string-array>
+    <string-array name="Spinner_items3">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

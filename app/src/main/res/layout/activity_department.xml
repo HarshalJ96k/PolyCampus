@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Academic Departments"
+            app:titleTextColor="@color/primary_blue"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:navigationIconTint="@color/primary_blue" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Computer Engineering -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerInside"
+                        android:background="@color/accent_blue"
+                        android:padding="32dp"
+                        android:src="@drawable/computer_engg_img"
+                        app:shapeAppearanceOverlay="@style/RoundedTopCorners" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_computer_24"
+                                app:tint="@color/primary_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="Computer Engineering"
+                                android:textColor="@color/gray_800"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Hands-on Practical Training" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="High-Quality Teaching Staff" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Regular Industrial Visits" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="24x7 High-Speed Internet" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Digital Classrooms with Projectors" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Information Technology -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerInside"
+                        android:background="@color/accent_blue"
+                        android:padding="32dp"
+                        android:src="@drawable/it_engg_img"
+                        app:shapeAppearanceOverlay="@style/RoundedTopCorners" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_cloud_24"
+                                app:tint="@color/primary_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="Information Technology"
+                                android:textColor="@color/gray_800"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Advanced Software Labs" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Industry-Oriented Training" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Dedicated Digital Library" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Cloud Computing Infrastructure" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Electrical Engineering -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerInside"
+                        android:background="@color/accent_blue"
+                        android:padding="32dp"
+                        android:src="@drawable/electrical_engg_img"
+                        app:shapeAppearanceOverlay="@style/RoundedTopCorners" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_bolt_24"
+                                app:tint="@color/primary_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="Electrical Engineering"
+                                android:textColor="@color/gray_800"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Deep Circuit Knowledge" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Power System Design &amp; Analysis" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Modern Electrical Machinery Labs" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Safety and Standards Training" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Mechanical Engineering -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerInside"
+                        android:background="@color/accent_blue"
+                        android:padding="32dp"
+                        android:src="@drawable/mechanical_engg_img"
+                        app:shapeAppearanceOverlay="@style/RoundedTopCorners" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_settings_24"
+                                app:tint="@color/primary_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="Mechanical Engineering"
+                                android:textColor="@color/gray_800"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Advanced Workshop Skills" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="AutoCAD and Design Studio" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Fluid Mechanics &amp; Energy Labs" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Core Branch Excellence" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Civil Engineering -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerInside"
+                        android:background="@color/accent_blue"
+                        android:padding="32dp"
+                        android:src="@drawable/civil_engg_img"
+                        app:shapeAppearanceOverlay="@style/RoundedTopCorners" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_apartment_24"
+                                app:tint="@color/primary_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="Civil Engineering"
+                                android:textColor="@color/gray_800"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Expert Design &amp; Construction Faculty" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Surveying &amp; Field Training" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Latest Equipment for Lab Testing" />
+
+                        <TextView
+                            style="@style/ProgramItem"
+                            android:text="Outstanding Placement Records" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

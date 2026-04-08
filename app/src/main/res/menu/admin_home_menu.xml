@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_admin_teachers"
+        android:icon="@drawable/icon_welcome"
+        android:title="Teachers" />
+    <item
+        android:id="@+id/menu_admin_students"
+        android:icon="@drawable/icon_student"
+        android:title="Students" />
+    <item
+        android:id="@+id/menu_admin_subjects"
+        android:icon="@drawable/icon_attendance"
+        android:title="Curriculum" />
+
+    <item
+        android:id="@+id/menu_admin_notices"
+        android:icon="@drawable/baseline_notifications_off_24"
+        android:title="Notices" />
+</menu>

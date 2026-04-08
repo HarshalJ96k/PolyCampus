@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/til_view_presenty_date"
+                android:layout_margin="4dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <TextView
+                    android:id="@+id/tv_add_presenty_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/etbgshape"
+                    android:drawableLeft="@drawable/icon_date"
+                    android:drawablePadding="20dp"
+                    android:hint="Select Date"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/til_enter_subject_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tie_enter_subject_name"
+                    android:textColor="@color/purple_700"
+                    android:hint="Enter Subject Name"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnViewSubjectwiseAttendance"
+                android:text="View Date and Subjectwise Attendace"
+                android:background="@drawable/btn_bg_shape_blue"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:id="@+id/ll1"
+                android:weightSum="3"
+                android:layout_marginTop="8sp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Enrollment No"
+                    android:textSize="14dp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tv_date"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    />
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="60dp"
+                    android:background="@color/purple_700"
+                    android:id="@+id/view"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Studnet Name"
+                    android:textSize="14dp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_student_name"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    />
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="60dp"
+                    android:background="@color/purple_700"
+                    android:id="@+id/view1"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Subject Name"
+                    android:textSize="14dp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_subject_name"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    />
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="60dp"
+                    android:background="@color/purple_700"
+                    android:id="@+id/view3"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Presenty"
+                    android:textSize="14dp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_presenty"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lv_view_student_presenty_list"
+                android:layout_marginTop="10dp"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_no_record"
+            android:text="No Student Presenty Available"
+            android:visibility="visible"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</ScrollView>

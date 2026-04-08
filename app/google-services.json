@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1067616293039",
+    "project_id": "polycampus-2a903",
+    "storage_bucket": "polycampus-2a903.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067616293039:android:7153c844925b852b30845a",
+        "android_client_info": {
+          "package_name": "com.polycampus.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJTBP8OwykmBum1lVxoBgAqVbSB7ii1ZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

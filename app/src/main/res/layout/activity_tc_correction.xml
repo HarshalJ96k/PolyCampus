@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TC_CorrectionActivity"
+    android:orientation="vertical"
+    android:background="@drawable/tc_correction_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TC Correction"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvlogin"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#BF78EA"
+        app:cardElevation="16dp"
+
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Correction_FullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Full Name"
+                    android:inputType="textPassword"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etBonafiedReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Branch"
+                    android:inputType="textPassword"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etBonafiedAdmissionReceipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Aggregate "
+                    android:inputType="textPassword"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnTc_Correction_Submit"
+                    android:text="Submit Information"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btn_backgroundshape"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

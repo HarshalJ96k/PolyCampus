@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        app:showAsAction="always"
+        android:title=""
+        android:id="@+id/a"
+        android:icon="@drawable/icon_home_showmenu">
+        <menu>
+            <item
+                android:id="@+id/menuHomeeNotice"
+                android:title="Notice"
+                app:showAsAction="always"
+                android:icon="@drawable/icon_notice"/>
+            <item
+                android:id="@+id/menuStudyMaterial"
+                android:title="Study Material"
+                app:showAsAction="never"
+                android:icon="@drawable/icon_evoting"/>
+            <item
+                android:id="@+id/menuHomeContactUs"
+                android:title="Contact Us"
+                app:showAsAction="never"
+                android:icon="@drawable/icon_mobileno"/>
+            <item
+                android:id="@+id/menuHomeAboutUs"
+                android:title="About Us"
+                app:showAsAction="never"
+                android:icon="@drawable/icon_aboutus"/>
+            <item
+                android:id="@+id/menuHomeLogOut"
+                android:title="Logout"
+                app:showAsAction="always"
+                android:icon="@drawable/icon_logout"/>
+        </menu>
+    </item>
+</menu>
+

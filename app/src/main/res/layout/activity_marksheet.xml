@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarksheetActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Marksheet "
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvlogin"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#EDA842"
+        app:cardElevation="16dp"
+
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMarksheet"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Subject 1"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Correction_FullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Marks (/100)"
+                    android:inputType="textPassword"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Subject 2"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etBonafiedReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Marks (/100)"
+                    android:inputType="textPassword"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Subject 3"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etBonafiedAdmissionReceipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Marks (/100)"
+                    android:inputType="textPassword"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Subject 4"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="25dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="false"
+                    android:layout_marginTop="25dp"
+                    >
+                    <EditText
+                        android:id="@+id/etBonafiedAdmissionReceipt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/etbgshape"
+                        android:hint="Enter Marks (/100)"
+                        android:inputType="textPassword"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#DFDFDF"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Subject 5"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="25dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="false"
+                    android:layout_marginTop="25dp"
+                    >
+                    <EditText
+                        android:id="@+id/etBonafiedAdmissionReceipt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/etbgshape"
+                        android:hint="Enter Marks (/100)"
+                        android:inputType="textPassword"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#DFDFDF"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnTc_Correction_Submit"
+                android:text="Submit Information"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:backgroundTint="#FFEB3B"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+  </LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home_all_student"
+        android:icon="@drawable/icon_student"
+        android:title="All Student"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/menu_home_subject_wise_attendance"
+        android:icon="@drawable/icon_my_attendance"
+        android:title="Subjectwise Attendance"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/menu_home_add_attendance"
+        android:icon="@drawable/icon_add_attendance"
+        android:title="Add Attendance"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/menu_home_add_notice"
+        android:icon="@drawable/icon_time_table"
+        android:title="Add Notice"
+        android:menuCategory="secondary"/>
+    <item
+        android:id="@+id/menu_home_leave_requests"
+        android:icon="@drawable/icon_doc_filled"
+        android:title="Leave"
+        android:menuCategory="secondary"/>
+
+<!--    <item-->
+<!--        android:id="@+id/menu_home_add_study_material"-->
+<!--        android:icon="@drawable/icon_subject1"-->
+<!--        android:iconTint="@color/blue"-->
+<!--        android:title="Add Study Material"-->
+<!--        android:menuCategory="secondary"/>-->
+
+</menu>

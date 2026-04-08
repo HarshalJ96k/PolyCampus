@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/gray"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="16dp"
+        android:layout_margin="16dp"
+        android:id="@+id/cvgetAlldata">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivStudentSectionImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/applogo"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/tvsectionname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="16sp"
+                android:fontFamily="@font/cambo"
+                android:text="Section Name"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>

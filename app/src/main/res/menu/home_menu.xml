@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:title="Scan Student"-->
+<!--        android:id="@+id/home_menu_scan_student"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/qr_scan"/>-->
+
+
+    <item
+        android:title="Add Study Material"
+        android:id="@+id/home_menu_add_study_material"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="Upload Test Marks"
+        android:id="@+id/home_menu_upload_marks"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="Change Dashboard Password"
+        android:id="@+id/home_menu_change_password"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="Logout"
+        android:id="@+id/home_menu_logout"
+        app:showAsAction="never"/>
+
+</menu>

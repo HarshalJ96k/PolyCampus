@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "222883087411",
+    "project_id": "polycampus-969b8",
+    "storage_bucket": "polycampus-969b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222883087411:android:9a38ae225d3968f99f0f46",
+        "android_client_info": {
+          "package_name": "com.polycampus.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxFKzdhALalExUMcXTZ1UPvFlgnELUMe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

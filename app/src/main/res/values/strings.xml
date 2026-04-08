@@ -1,0 +1,100 @@
+<resources>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="Presenty">
+
+        <item>Select Presenty</item>
+        <item>Present</item>
+        <item>Absent</item>
+
+    </string-array>
+
+    <string name="app_name">PolyCampus</string>
+    <string-array name="Spinner_items">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="Spinner_items2">
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Information Engineering</item>
+    </string-array>
+    <string-array name="Spinner_items3">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="branch">
+        <item>Select Your Branch</item>
+        <item>Computer Engineering</item>
+        <item>Information Technology</item>
+        <item>Electronics and Telecommunication</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="semester">
+
+        <item>Select Your Sem</item>
+        <item>First Sem</item>
+        <item>Second Sem</item>
+        <item>Third Sem</item>
+        <item>Fourth Sem</item>
+        <item>Fifth Sem</item>
+        <item>Sixth Sem</item>
+
+    </string-array>
+
+    <string-array name="select_your_subject">
+
+        <item>First Choose Sem</item>
+    </string-array>
+
+    <string-array name="first_sem">
+
+        <item>A,B,C</item>
+
+    </string-array>
+
+    <string-array name="second_sem">
+
+        <item>D,E,F</item>
+
+    </string-array>
+
+    <string-array name="third_sem">
+
+        <item>G,H,I</item>
+
+    </string-array>
+
+    <string-array name="fourth_sem">
+
+        <item>J,K,L</item>
+
+    </string-array>
+
+    <string-array name="fifth_sem">
+
+        <item>M,N,O</item>
+
+    </string-array>
+
+    <string-array name="sixth_sem">
+
+        <item>P,Q,R</item>
+
+    </string-array>
+
+</resources>

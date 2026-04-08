@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_fileName="registration_lottie.json"
+        app:lottie_speed="6"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:id="@+id/registrationlottie"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+
+        />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivLoginLogo"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:src="@drawable/applogo" />-->
+
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Here"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@+id/registrationlottie"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLoginTitle"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="false">
+        <EditText
+
+            android:id="@+id/etLoginUsername"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="12dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/icon_username"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/cambo"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:includeFontPadding="true"
+
+            android:padding="8sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginshowhidepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="false">
+            <EditText
+                android:id="@+id/etLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="@color/black"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/cambo"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="11sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+<!--            <ImageView-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:id="@+id/tvshowhidePassword"-->
+<!--                android:src="@drawable/icon_hidepassword"-->
+<!--                android:layout_marginLeft="370dp"-->
+<!--                android:background="@color/black"-->
+<!--                android:layout_marginTop="-57dp"/>-->
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="35dp"
+          android:id="@+id/tvforgetPassword"
+          android:text="Forget Password?"
+          android:layout_marginTop="16dp"
+          android:layout_marginLeft="20dp"
+          android:textSize="16dp"
+          android:textColor="@color/skyblue"
+          android:textStyle="bold"
+          android:fontFamily="@font/cambo"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLoginLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#2196F3"
+            android:fontFamily="sans-serif-black"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:id="@+id/tvLoginNewUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivLoginLogo"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cambo"
+            android:text="New User Click Here"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

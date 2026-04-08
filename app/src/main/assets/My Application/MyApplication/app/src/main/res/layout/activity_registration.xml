@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                app:lottie_autoPlay="true"
+                app:lottie_speed="3"
+                app:lottie_loop="true"
+                android:scaleType="fitXY"
+                app:lottie_fileName="login.json"
+                android:visibility="visible"
+                android:id="@+id/lasplash"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/cambo"
+                android:gravity="center"
+                android:text="Register Here"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+            <EditText
+                android:id="@+id/etRegisterName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10sp"
+                android:layout_margin="8sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/icon_person"
+                android:drawablePadding="8sp"
+                android:layout_marginTop="8sp"
+                android:fontFamily="@font/cambo"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="8sp"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+            <EditText
+                android:id="@+id/etRegisterMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8sp"
+                android:layout_marginTop="8sp"
+                android:fontFamily="@font/cambo"
+                android:drawableLeft="@drawable/icon_mobileno"
+                android:drawablePadding="8sp"
+                android:hint="Mobile No"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:padding="8sp"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+                <EditText
+                    android:id="@+id/etRegisterParentno"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8sp"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/icon_parentno"
+                    android:drawablePadding="8sp"
+                    android:layout_marginTop="8sp"
+                    android:fontFamily="@font/cambo"
+                    android:hint="Parent No"
+                    android:inputType="numberDecimal"
+                    android:padding="8sp"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+
+                <EditText
+                    android:id="@+id/etRegisterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8sp"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/icon_email"
+                    android:drawablePadding="8sp"
+                    android:layout_marginTop="8sp"
+                    android:fontFamily="@font/cambo"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:padding="8sp"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+
+
+                <EditText
+                    android:id="@+id/etRegisterGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8sp"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/icon_gender"
+                    android:drawablePadding="8sp"
+                    android:layout_marginTop="8sp"
+                    android:fontFamily="@font/cambo"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:padding="8sp"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+                <EditText
+                    android:id="@+id/etRegisterAdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8sp"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/icon_address"
+                    android:drawablePadding="8sp"
+                    android:layout_marginTop="8sp"
+                    android:fontFamily="@font/cambo"
+                    android:hint="Address"
+                    android:inputType="textPersonName"
+                    android:padding="8sp"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+
+                <EditText
+                    android:id="@+id/etRegisterBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8sp"
+                    android:layout_marginTop="8sp"
+                    android:drawableLeft="@drawable/icon_branch"
+                    android:drawablePadding="8sp"
+                    android:fontFamily="@font/cambo"
+                    android:hint="Branch"
+                    android:inputType="text"
+                    android:padding="8sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+<!--                <Spinner-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/spnChoice3"-->
+<!--                    android:layout_marginLeft="55dp"-->
+<!--                    android:backgroundTint="@color/black"-->
+<!--                    android:layout_marginTop="-45dp"-->
+<!--                    android:entries="@array/Spinner_items3"/>-->
+            <EditText
+                android:id="@+id/etRegisterYear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8sp"
+                android:layout_marginTop="8sp"
+                android:fontFamily="@font/cambo"
+                android:hint="Year"
+                android:drawableLeft="@drawable/icon_year"
+                android:drawablePadding="8sp"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:padding="8sp"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+            <EditText
+                android:id="@+id/etRegisterUserName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8sp"
+                android:layout_marginTop="8sp"
+                android:fontFamily="@font/cambo"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/icon_name"
+                android:drawablePadding="8sp"
+                android:hint="UserName"
+                android:inputType="numberDecimal"
+                android:padding="8sp"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false">
+            <EditText
+                android:id="@+id/etRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8sp"
+                android:layout_marginTop="8sp"
+                android:fontFamily="@font/cambo"
+                android:hint="Password"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="8sp"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:padding="8sp"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/ivHidePassword"
+                    android:src="@drawable/icon_hidepassword"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginLeft="310dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegisterregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+
+                android:backgroundTint="@color/skyblue"
+                android:text="Register Now "
+                android:textColor="#F44336"
+                android:textSize="20dp"
+                android:fontFamily="@font/cambo"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/cambo"
+                android:gravity="center"
+                android:text="Already a User,Sign In..."
+                android:textColor="@color/red"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:id="@+id/tvAlreadyUser"/>
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+

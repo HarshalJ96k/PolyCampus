@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/homeBottomNavigationStudyMaterial"
+    android:title="StudyMaterial"
+    android:icon="@drawable/icon_studymaterial"
+    app:showAsAction="never"/>
+    <item
+    android:id="@+id/homeBottomNavigationAttendance"
+    android:title="Attendance"
+    android:icon="@drawable/icon_attendance"
+    app:showAsAction="never"/>
+    <item
+        android:id="@+id/homeBottomNavigationLibrary"
+        android:title="Library"
+        android:icon="@drawable/icon_librarybooks"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/homeBottomNavigationPlacements"
+        android:title="Placements"
+        android:icon="@drawable/icon_placements"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/homeBottomNavigationMyProfile"
+        android:title="MyProfile"
+        android:icon="@drawable/icon_myprofile"
+        app:showAsAction="never"/>
+
+
+
+</menu>

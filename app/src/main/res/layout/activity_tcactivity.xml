@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TCActivity"
+    android:orientation="vertical"
+    android:background="@drawable/tc_bg_img"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Apply For TC"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvlogin"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#BF78EA"
+        app:cardElevation="16dp"
+
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Enrollment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Enrollment Number"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Full_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Full Name"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Caste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Race and Caste "
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Place_of_Birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Place of Birth "
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Date_of_Birth_Month_Year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Date of Birth Month and Year"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_According_to_Christian_Era"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter According to Christian Era"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_in_Words_and_figures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter in Words and figures"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Institute_Last_Attended"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Institute Last Attended"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Date_of_Admission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Date of Admission"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Progress"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Conduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Conduct"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Date_of_Leaving_this_Institution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Date of Leaving this Institution "
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Enter_Course_and_Year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Course and Year"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Enter_Studying_Since_When"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Studying Since When"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Reason_for_leaving_Poly__Institute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Reason for leaving Poly. Institute"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Branch"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Percentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Percentage "
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginTop="25dp"
+                >
+                <EditText
+                    android:id="@+id/etTc_Exam_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/etbgshape"
+                    android:hint="Enter Exam Name"
+                    android:inputType="text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#DFDFDF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTc_Submit"
+        android:text="Submit Information"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_backgroundshape"
+        />
+</LinearLayout>
+</ScrollView>

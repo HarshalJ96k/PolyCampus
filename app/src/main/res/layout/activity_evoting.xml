@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".eVotingActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:text="E-Voting / Poll"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingBottom="16dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:text="How do you feel about the new lunch program?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingBottom="16dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_love"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="I love it"
+            android:background="@drawable/radio_button_bg"
+            android:padding="12dp"
+            android:buttonTint="@color/blue"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/radio_okay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="It's okay"
+            android:background="@drawable/radio_button_bg"
+            android:padding="12dp"
+            android:buttonTint="@color/blue"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/radio_dont_like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="I don't like it"
+            android:background="@drawable/radio_button_bg"
+            android:padding="12dp"
+            android:buttonTint="@color/blue"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/Prefer_Not_to_Say"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Prefer Not to Say"
+            android:background="@drawable/radio_button_bg"
+            android:padding="12dp"
+            android:buttonTint="@color/blue"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/btn_backgroundshape"/>
+
+</LinearLayout>
